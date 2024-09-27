@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfect Draw</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+      <h1>Perfect Draw</h1>
+      <!-- Hidden canvas for the reference shape -->
+      <canvas id="shapeCanvas" width="400" height="400" style="display: none;"></canvas>
+      <!-- Canvas for user drawing -->
+      <canvas id="drawingCanvas" width="400" height="400"></canvas>
+      <br>
+      <button id="calculateBtn">Calculate Accuracy</button>
+      <button id="resetBtn">Reset</button>
+      <div id="accuracy"></div>
+  
+      <!-- Display the overlayed image and difference side by side -->
+      <div class="canvas-row">
+          <div>
+              <h3>Overlayed Image</h3>
+              <canvas id="overlayCanvas" class="border-one-px" width="400" height="400"></canvas>
+          </div>
+          <div>
+              <h3>Difference Image</h3>
+              <canvas id="diffCanvas" class="border-one-px" width="400" height="400"></canvas>
+          </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
